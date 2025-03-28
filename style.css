@@ -57,7 +57,7 @@ body {
 
 .htmlContainer h2,
 .markedContainer h2 {
-  text-align: center;
+  text-align: left;
   font-size: 1.8em;
   color: #ffcc00;
   margin-bottom: 10px;
@@ -83,6 +83,22 @@ textarea:focus {
 
 textarea::placeholder {
   color: rgba(255, 255, 255, 0.5);
+}
+
+button {
+  margin-top: 10px;
+  padding: 10px;
+  background-color: #ffcc00;
+  color: #1c2b40;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background-color: #ffaa00;
 }
 
 .markedContainer .output {
