@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Arial", sans-serif;
+}
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-color: #0b111a;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.navbar {
+  width: 100%;
+  background-color: #1c2b40;
+  padding: 15px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(255, 255, 255, 0.2);
+}
+
+.navbar h1 {
+  margin: 0;
+  color: #ffcc00;
+  font-size: 2rem;
+}
+
+.container {
+  display: flex;
+  gap: 20px;
+  max-width: 1600px;
+  width: 100%;
+  padding: 20px;
+  justify-content: center;
+}
+
+.htmlContainer,
+.markedContainer {
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  background-color: #1c2b40;
+  color: aliceblue;
+  min-height: 600px;
+  width: 750px;
+  padding: 20px;
+  box-shadow: 0 4px 15px rgba(255, 255, 255, 0.2);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.htmlContainer h2,
+.markedContainer h2 {
+  text-align: center;
+  font-size: 1.8em;
+  color: #ffcc00;
+  margin-bottom: 10px;
+}
+
+textarea {
+  background-color: transparent;
+  color: aliceblue;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  width: 100%;
+  flex-grow: 1;
+  padding: 10px;
+  font-size: 1.2rem;
+  resize: none;
+  outline: none;
+  border-radius: 5px;
+}
+
+textarea:focus {
+  border-color: #ffffff;
+  box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+}
+
+textarea::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.markedContainer .output {
+  flex-grow: 1;
+  overflow: auto;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 5px;
+  padding: 10px;
+  background-color: #1c2b40;
+}
+
+.markedContainer h1 {
+  font-size: 2.2em;
+  margin-bottom: 15px;
+  color: #ffcc00;
+}
+
+.markedContainer a {
+  color: #33aaff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.markedContainer a:hover {
+  text-decoration: underline;
+  color: #ff8800;
+}
+
+.markedContainer p {
+  margin: 15px 0;
+  font-size: 1.1rem;
+}
+
+.markedContainer ol,
+.markedContainer ul {
+  margin: 10px 0 10px 25px;
+}
+
+.markedContainer li {
+  margin-bottom: 8px;
+  font-size: 1.1rem;
+}
+
+.markedContainer blockquote {
+  border-left: 5px solid #ffcc00;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 15px;
+  margin: 15px 0;
+  font-style: italic;
+  border-radius: 5px;
+}
